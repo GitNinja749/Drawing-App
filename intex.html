@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DrawingApp</title>
+    <!-- icon link -->
+    <link rel="icon" href="photos/download.png">
+    <!-- css link -->
+    <link rel="stylesheet" href="intex.css">
+
+    <!-- bootstrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>    
+   
+    <!-- font awesome link-->
+    <script src="https://kit.fontawesome.com/845a769288.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <!-- main div -->
+<div class="header">
+    <div class="image">
+        <h1 class="text-center fw-medium  ">Drawing App</h1>
+    </div>
+    
+    <div class="container d-flex  mb-1">
+        <input type="color" id="color" class="me-2 " >
+        <input type="number" id="thickness"  value="3" min="0" max="100" class="me-2 fs-2">
+        <select name="type" id="brushType" value="brushType" class=" fs-3 me-2">
+            <option value="round">Round</option>
+            <option value="square">Square</option>
+            <option value="butterfly">Butterfly</option>
+        </select>
+        <button type="button" class="btn btn-outline-light d-flex justify-content-centre" id="clearButton">
+            <i class="fs-2  fa-solid fa-delete-left"></i>
+        </button>
+        <button type="button" class="btn btn-outline-light d-flex justify-content-centre ms-2" id="eraseButton">
+            <i class="fs-2  fa-solid fa-eraser fa-flip"></i>
+        </button>
+        <button type="button" class="btn btn-outline-light d-flex justify-content-centre ms-2" id="brushButton">
+            <i class="fs-2 fa-solid fa-paintbrush  "></i>
+        </button>
+    </div> 
+    <canvas id="canvas"></canvas>
+</div>
+
+
+ <!-- js link -->
+    <script src="intex.js"></script>
+</body>
+</html>
